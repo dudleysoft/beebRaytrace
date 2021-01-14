@@ -289,12 +289,8 @@ org &960
     sta &FE4F               ; Set the actual value
     lda #0                  ; Then we need to flag
     sta &FE40               ; The sound chip that data is there
-    nop
-    nop
-    nop
-    nop
-    nop
-    nop
+    cmp (0,x)		    ; 6 cycle delay in two bytes	
+    cmp (0,x)	            ; 6 cycle delay in two bytes
     lda #8                  ; We need to wait long enough for it to detect it
     sta &FE40               ; And then remove the flag
     rts                     ; And return
