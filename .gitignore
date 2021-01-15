@@ -1,0 +1,6 @@
+*.o
+*.ssd
+*.dsd
+*.adl
+*.bin
+temp

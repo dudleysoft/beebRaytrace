@@ -10,7 +10,7 @@ LD_FLAGS := -Wl,--gc-sections -Wl,--no-print-gc-sections -Wl,-T,rpi.X -Wl,-lm
 
 CFLAGS += -Dbagi_SDLENV
 
-OBJ = main.o armc-start.o armtubeio.o armtubeswis.o beebScreen/beebScreen.o
+OBJ = main.o armc-start.o armtubeio.o armtubeswis.o beebScreen/beebScreen.o sqrtf.o
 
 LIB = -lc -lm
 

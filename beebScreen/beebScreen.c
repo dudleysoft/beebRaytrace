@@ -748,7 +748,7 @@ void beebScreen_CompressAndCopy(unsigned char *new,unsigned char *old)
         }
         else
         {
-        WRITE_BUF(128+count);
+            WRITE_BUF(128+count);
         }
       }
     }
